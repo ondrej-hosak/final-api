@@ -11,9 +11,13 @@ addons:
 
 services:
   - redis
+  - postgres
 
 before_script:
   - 'cp config/database.yml.example config/database.yml'
   - 'cp config/travis.yml.example config/travis.yml'
-  - 'RAILS_ENV=test bundle exec rake db:create db:structure:load --trace'
+  - 'psql -c "create database travis_logs;" -U postgres'
+  - 'RAILS_ENV=test bundle exec rake db:create db:migrate --trace'
 
+script:
+  - bundle exec rspec
