@@ -1,10 +1,4 @@
 GIT
-  remote: git://github.com/AVGTechnologies/test-aggregation.git
-  revision: 5921c651632edfc21bb316ca9a4a5fa25866e17b
-  specs:
-    test-aggregation (0.1.0)
-
-GIT
   remote: git://github.com/AVGTechnologies/travis-core.git
   revision: 1d60188446e12fe9d4b29276dc82837eadf91829
   specs:
@@ -57,6 +51,13 @@ GIT
   revision: 4430463d774bfd076443535b2d6f9243b97e1328
   specs:
     travis-support (0.0.1)
+
+GIT
+  remote: git://github.com/ondrej-hosak/test-aggregation.git
+  revision: 149ea0d4198464c74a54ad9630e8a7873a608c27
+  ref: 149ea0d4198464c74a54ad9630e8a7873a608c27
+  specs:
+    test-aggregation (0.1.0)
 
 GIT
   remote: git://github.com/utgarda/sidekiq-status.git
